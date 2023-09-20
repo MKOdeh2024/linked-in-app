@@ -1,0 +1,31 @@
+{
+    "name": "linked-in-app",
+    "version": "1.0.0",
+    "description": "semi linked in app",
+    "main": "index.js",
+    "scripts": {
+        "build-tsc": "tsc -w",
+        "run-watch": "nodemon ./dist",
+        "dev": "concurrently \"npm:build-tsc\"  \"npm:run-watch\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MKOdeh2024/linkedin.ps.git"
+    },
+    "author": "Muhammad Odej\\",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/MKOdeh2024/linkedin.ps/issues"
+    },
+    "homepage": "https://github.com/MKOdeh2024/linkedin.ps#readme",
+    "dependencies": {
+        "express": "^4.18.2",
+        "mysql": "^2.18.1"
+    },
+    "devDependencies": {
+        "@types/express": "github:types/express",
+        "@types/node": "^20.5.6",
+        "nodemon": "^3.0.1",
+        "tsc": "^2.0.4"
+    }
+}
